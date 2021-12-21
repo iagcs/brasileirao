@@ -67,3 +67,23 @@ Para rodar os testes da aplicação rode o comando:
 ``
     $ vendor/bin/phpunit
 ``
+
+Caso prefira rodar com docker, rode o comando 
+
+``
+    $ docker-compose build
+``
+
+E em seguida 
+
+``
+    $ docker-compose up
+``
+
+Para acessar o bash do container:
+
+``
+    $ docker container exec -it brasileirao-app /bin/bash
+``
+
+Agora é so rodar os comando normalmente.
