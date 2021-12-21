@@ -17,7 +17,7 @@ services:
       - brasileirao
 
   db:
-    image: mysql/mysql-server:5.7
+    image: mysql:latest
     container_name: brasileirao-db
     restart: unless-stopped
     environment:
@@ -27,8 +27,6 @@ services:
       MYSQL_USER: ${DB_USERNAME}
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
-    volumes:
-      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
     networks:
       - brasileirao
 
