@@ -86,4 +86,4 @@ Para acessar o bash do container:
     $ docker container exec -it brasileirao-app /bin/bash
 ``
 
-Agora é so rodar os comando normalmente.
+Agora é so rodar os comandos ditos acima normalmente.
